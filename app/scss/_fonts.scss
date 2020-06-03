@@ -1,0 +1,49 @@
+@font-face {
+font-family: 'Intro';
+    src: local('Intro Regular'), local('Intro-Regular'),
+        url('/app/fonts/Intro-Regular/Intro-Regular.woff2') format('woff2'),
+        url('/app/fonts/Intro-Regular/Intro-Regular.woff') format('woff'),
+        url('/app/fonts/Intro-Regular/Intro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Intro';
+    src: local('Intro-Black Regular'), local('Intro-Black-Regular'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black.woff2') format('woff2'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black Regular.woff') format('woff'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Intro';
+    src: local('Intro Black Italic'), local('Intro-Black-Italic'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff2') format('woff2'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff') format('woff'),
+        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff2') format('woff2'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff') format('woff'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('Proxima-Nova-Bold'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff') format('woff'),
+        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
