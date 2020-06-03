@@ -1,2 +1,3 @@
-# test_fed
-Test-work for Hexa.
+# Project "Фотообои"
+Test-work for Hexa(R).
+`node_modules - gitignored`

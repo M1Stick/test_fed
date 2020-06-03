@@ -1,12 +1,12 @@
 {
-  "name": "gulp-start",
+  "name": "Test_FED",
   "version": "1.0.0",
   "description": "start gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "author": "Khramov Kostiantyn",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
@@ -21,5 +21,13 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1Stick/test_fed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M1Stick/test_fed/issues"
+  },
+  "homepage": "https://github.com/M1Stick/test_fed#readme"
 }
