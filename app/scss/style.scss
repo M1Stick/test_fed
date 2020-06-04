@@ -22,6 +22,7 @@
 }
 .container{
     max-width: 1190px;
+    min-width: $minwidth;
     padding: 0px 15px;
     margin: 0 auto;
 }
@@ -148,22 +149,36 @@
 }
 .slider{
     position: relative;
+    overflow: hidden;
+    &__stick{
+        width: 55px;
+        height: 183px;
+        margin: 0 auto;
+    }
     &__shape{
-        background: url(../img/shape.png);
+        max-width: 100%;
+        height: 483px;
+        position: absolute;
+        z-index: 1;
     }
     &__head{
         &-rectangle{
-            width: 662px;
-            height: 125px;
-            transform: skew(-16deg);
-            background-color: #ffffff;
-            opacity: 0.7;
-            margin-top: 80px;
-            margin-left: 335px;
-            margin-bottom: 8px;
+            background: url(../img/first-shape.png);
+            background-repeat: no-repeat;
+            width: 613px;
+            height: 110px;
+            margin-left: 390px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
         }
     }
     &__heading{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
         color: #000000;
         font-family: $intro;
         font-size: 90px;
@@ -172,15 +187,12 @@
         text-transform: uppercase;
         letter-spacing: -1.55px;
         padding: 23px 45px;
-        z-index: 5;
-    }
-    &__img{
-        max-width: 100%;
-        height: 100vh;
-        position: relative;
         z-index: 1;
     }
     &__item{
+        display: inline-flex;
+        flex-direction: column;
+        flex: 0 0 100%;
         max-width: 100%;
         height: 100vh;
         background: url(../img/bedroom-1.png);
@@ -214,18 +226,23 @@
     }
     &__info{
         display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
         &-rectangle{
-            width: 313px;
-            height: 70px;
-            transform: skew(-16deg);
-            background-color: #ffffff;
-            opacity: 0.7;
-            margin-top: 5px;
-            margin-left: 304px;
-            margin-right: 12px;
+            display: flex;
+            justify-content: center;
             text-align: center;
+            width: 294px;
+            height: 63px;
             align-items: center;
-            padding: 12px;
+            background: url(../img/second-shape.png);
+            background-repeat: no-repeat;
+            margin-left: 369px;
+            margin-right: 12px;
+            z-index: 1;
         }
     }
     &__content{
@@ -236,9 +253,10 @@
         border-bottom: 3px solid #000000;
         padding-bottom: 9px;
         text-align: center;
-        z-index: 5;
+        margin: 0 auto;
+        z-index: 1;
     }
-    &__price{
+    &__price{ 
         color: #ffffff;
         font-family: $intro;
         font-size: 16px;
@@ -246,22 +264,94 @@
         z-index: 5;
         text-align: center;
         padding-top: 10px;
+        &-rectangle{
+            background: url(../img/green-shape.png);
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 57px;
+            margin-top: 10px;
+        }
         & span{
             color: #ffffff;
             font-family: $intro;
             font-size: 45px;
             font-weight: 400;
-            padding: 0 25px;
+            padding: 0 19px 7px;
+        } 
+    }
+    &__ideas{
+        color: #ffffff;
+        font-family: $fontfamily;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+        padding-top: 25px;
+        margin-left: 388px;
+    }
+    &__link{ 
+        &-content{
+            position: relative;
+            display: flex;
+            z-index: 2;
+            width: 225px;
+            height: 45px;
+            color: #ffffff;
+            font-family: $fontfamily;
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 25.99px;
+            text-transform: uppercase;
+            border: 2px solid #ffffff;
+            background-color: #ff6666;
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#ff4f58), to(#fd7048));
+            background-image: -o-linear-gradient(bottom, #ff4f58 0%, #fd7048 100%);
+            background-image: linear-gradient(to top, #ff4f58 0%, #fd7048 100%);
+            margin-left: 390px;
+            margin-top: 25px;
+            padding-top: 10px;
+            padding-left: 14px;
         }
-        &-rectangle{
-            width: 205px;
-            height: 60px;
-            transform: skew(-16deg);
-            box-shadow: 3px 4px 5px rgba(0,0,0,0.75);
-            background-color: #ff5356;
-            background-image: linear-gradient(to right, #2aeb2a 0%, #007500 100%);
-            margin-top: 10px;
-        }
+    }
+}
+.services{
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.8;
+    margin-top: 105px;
+    &__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    &__item{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__img{
+        max-width: 100%;
+        width: auto;
+    }
+    &__heading{
+        color: #000000;
+        font-family: $fontfamily;
+        font-size: 22px;
+        font-weight: 700;
+        padding-top: 20px;
+    }
+    &__content{
+        color: #000000;
+        font-family: $fontfamily;
+        font-size: 16px;
+        font-weight: 400;
     }
 }
 .slider .slick-arrow{
@@ -273,12 +363,13 @@
     height: 40px;
 }
 .slider .slick-arrow.slick-prev{
-    left: 20%;
-    top: 50%;
+    left: 19%;
+    top: 44%;
     background: url(../img/left_arrow.svg);
 }
 .slider .slick-arrow.slick-next{
-    right: 69%;
+    top: 44%;
+    right: 68.5%;
     background: url(../img/right_arrow.svg);
 }
 .slider .slick-dots{
@@ -289,7 +380,7 @@
     font-size: 0;
     width: 65px;
     height: 15px;
-    top: 52%;
+    top: 46.5%;
     left: 24%;
     background: url(../img/dots.svg);
 }
