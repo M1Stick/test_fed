@@ -1,0 +1,27 @@
+@media (min-width:768px) and (max-width: 1129px){
+    .menu{
+        li{
+            font-size: 12px;
+            padding: 0 32px;
+        }
+    }
+}
+@media (min-width:768px) and (max-width: 808px){
+    .menu{
+        li{
+            font-size: 12px;
+            padding: 0 16px;
+        }
+    }
+    .header{
+        &__logo{
+            flex-grow: 1;
+        }
+        &__content{
+            flex-grow: 3;
+        }
+        &__tel{
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,39 +1,39 @@
 @font-face {
   font-family: 'Intro';
-  src:url('/app/fonts/Intro-Regular/Intro-Regular.woff2') format('woff2'),
-      url('/app/fonts/Intro-Regular/Intro-Regular.woff') format('woff');
+  src:url('../fonts/Intro-Regular/Intro-Regular.woff2') format('woff2'),
+      url('../fonts/Intro-Regular/Intro-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {  
     font-family: 'Intro';
-    src:url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black.woff2') format('woff2'),
-        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black Regular.woff') format('woff');
+    src:url('../fonts/Intro-Black-Regular&Italic/Intro-Black.woff2') format('woff2'),
+        url('../fonts/Intro-Black-Regular&Italic/Intro-Black Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'Intro';
-    src:url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff2') format('woff2'),
-        url('/app/fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff') format('woff');
+    src:url('../fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff2') format('woff2'),
+        url('../fonts/Intro-Black-Regular&Italic/Intro-Black-Italic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
   }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src:url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff2') format('woff2'),
-        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff') format('woff');
+    src:url('../fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular&Bold/ProximaNova-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src:url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff2') format('woff2'),
-        url('/app/fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff') format('woff');
+    src:url('../fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular&Bold/ProximaNova-Bold.woff') format('woff');
     font-weight: 700; 
     font-style: normal;
   }

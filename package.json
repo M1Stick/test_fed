@@ -1,5 +1,5 @@
 {
-  "name": "Test_FED",
+  "name": "gulp-start",
   "version": "1.0.0",
   "description": "start gulp",
   "main": "index.js",
@@ -21,13 +21,5 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/M1Stick/test_fed.git"
-  },
-  "bugs": {
-    "url": "https://github.com/M1Stick/test_fed/issues"
-  },
-  "homepage": "https://github.com/M1Stick/test_fed#readme"
+  }
 }
